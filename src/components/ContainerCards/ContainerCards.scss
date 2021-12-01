@@ -1,10 +1,10 @@
 .container-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   .card {
-      position: relative;
+    position: relative;
     width: 266px;
     height: 323px;
     opacity: 1;
@@ -42,13 +42,38 @@
       border-radius: 16px;
       opacity: 1;
       z-index: 1;
-    }
-    &:hover{
-        
-        .card-body{
-            height: 332px;
-        
+
+      .empty-space-sup{
+        height: 90px;
+      }
+
+      .card-names {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        .title {
+          width: 119px;
+          height: 40px;
+          text-align: center;
+          font: normal normal normal 30px/40px Poppins;
+          letter-spacing: -0.6px;
+          color: #d84a4a;
         }
+        .subtitle {
+          width: 81px;
+          height: 40px;
+          text-align: center;
+          font: normal normal normal 30px/40px Monster Clubhouse;
+          letter-spacing: -0.6px;
+          color: #d84a4a;
+        }
+      }
+    }
+    &:hover {
+      .card-body {
+        height: 332px;
+      }
     }
   }
 }
