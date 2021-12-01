@@ -1,22 +1,27 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useState } from "react";
 
 import './Header.scss';
 
 export const Header = (): ReactElement | null => {
+
+  const [selected, setSelected] = useState<string>('Home');
+
+  
+
   return (
     <header className="App-header">
-        <div>
+        <div className="container-name-app">
           <span className="monster-font text-title-recipe">Recipe</span>
           <span className="poppins text-title-app">App</span>
         </div>
         <nav className="nav-menu-sup">
-          <a className ="poppins menu-item selected" href="/home/">Home</a>
-          <a className ="poppins menu-item" href="/vegetarian/">Vegetarianos</a>
-          <a className ="poppins menu-item" href="/dishes/">Platos Principales</a>
-          <a className ="poppins menu-item" href="/cakes/">Tortas</a>
-          <a className ="poppins menu-item" href="/flash/">Comida Rápida</a>
-          <a className ="poppins menu-item" href="/menu-child/">Menú Niños</a>
-          <a className ="poppins menu-item" href="/Soup/">Sopas</a> 
+          <span className ={"poppins menu-item"+(selected==='Home'?' selected':'')} onClick={()=>setSelected('Home')}>Home</span>
+          <span className ={"poppins menu-item"+(selected==='vegetarian'?' selected':'')} onClick={()=>setSelected('vegetarian')}>Vegetarianos</span>
+          <span className ={"poppins menu-item"+(selected==='dishes'?' selected':'')} onClick={()=>setSelected('dishes')}>Platos Principales</span>
+          <span className ={"poppins menu-item"+(selected==='cakes'?' selected':'')} onClick={()=>setSelected('cakes')}>Tortas</span>
+          <span className ={"poppins menu-item"+(selected==='flash'?' selected':'')} onClick={()=>setSelected('flash')}>Comida Rápida</span>
+          <span className ={"poppins menu-item"+(selected==='child'?' selected':'')} onClick={()=>setSelected('child')}>Menú Niños</span>
+          <span className ={"poppins menu-item"+(selected==='soup'?' selected':'')} onClick={()=>setSelected('soup')}>Sopas</span> 
         </nav>
       </header>
   );
