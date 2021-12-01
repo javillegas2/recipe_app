@@ -1,0 +1,38 @@
+.sponsor-footer {
+  height: 190px;
+  width: 1280px;
+  margin-top: 100px;
+  padding-top: 70px;
+  position: relative;
+
+  .gradient-band {
+    width: 1280px;
+    height: 167px;
+    background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 4px 6px 23px #a9a9a911;
+    opacity: 1;
+    .sponsor-desc {
+      width: 376px;
+      height: 76px;
+      text-align: left;
+      font: normal normal normal 56px/76px Monster Clubhouse;
+      letter-spacing: 0px;
+      color: #425966;
+      position: absolute;
+      top: 115px;
+      left: 166px;
+    }
+  }
+
+  .market_image {
+    width: 536px;
+    height: 248px;
+    background: transparent url("../../img/Grupo7610.png") 0% 0% no-repeat
+      padding-box;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+}
