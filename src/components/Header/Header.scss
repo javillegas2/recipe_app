@@ -1,5 +1,8 @@
+
+
 .App-header {
-  width: 1280px;
+  //width: 1280px;
+  width: 100%;
   height: 69px;
   display: flex;
   flex-direction: row;
@@ -8,7 +11,7 @@
   box-sizing: border-box;
   padding: 10px;
 
-  .container-name-app{
+  .container-name-app {
     margin-left: 70px;
   }
   .text-title-recipe {
@@ -29,12 +32,17 @@
     opacity: 1;
   }
 
-  .nav-menu-sup{
-    width: 910px;
-    display: flex;
+  .nav-menu-sup {
+    max-width: calc(100% - 375px);
+    width: 100%;
+    //display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .nav-menu-home-slim{
+    display: none;
   }
 
   .menu-item {
@@ -43,7 +51,7 @@
     color: #425966;
     opacity: 1;
     text-decoration: none;
-    width: 130px;
+    //width: 130px;
     font-size: 13px;
     cursor: pointer;
 
@@ -51,4 +59,46 @@
       color: #d84a4a;
     }
   }
+}
+
+
+@media (max-width: 428px) {
+  .App-header {
+    
+    .nav-menu-sup {
+      display: none;
+    }
+    .nav-menu-home-slim{
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+
+}
+
+@media (min-width: 428px) and (max-width: 767px) {
+  .App-header {
+    
+    .nav-menu-sup {
+      display: none;
+    }
+    .nav-menu-home-slim{
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+@media (min-width: 768px) {
+
+  .App-header {
+    
+    .nav-menu-sup {
+      display: flex;
+    }
+  }
+  
+
 }

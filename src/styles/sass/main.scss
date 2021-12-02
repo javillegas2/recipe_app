@@ -1,22 +1,45 @@
-body{
-    background-color: #fcfafa;
+$breakpoints: (
+  phone: 428px,
+  tablet: 767px,
+  desktop: 1280px,
+) !default;
 
+body {
+  background-color: #fcfafa;
 }
 
+// @include media(">phone", "<tablet") {
 
-.App{
- width: 1280px;
- height: 1280px;
- margin: 40px auto;
- background-color: #FFFFFF;
+// }
 
+@media (max-width: 428px) {
+  .App {
+    max-width: 428px;
+  }
 }
 
-
-.monster-font{
-    font-family: 'Monster Clubhouse', sans-serif;
+@media (min-width: 428px) and (max-width: 767px) {
+  .App {
+    max-width: 767px;
+  }
 }
 
-.poppins{
-    font-family: 'Poppins', sans-serif;
+@media (min-width: 768px) {
+  .App {
+    max-width: 1280px;
+  }
+}
+.App {
+  width: 100%;
+  height: 1280px;
+  margin: 40px auto;
+  background-color: #ffffff;
+}
+
+.monster-font {
+  font-family: "Monster Clubhouse", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
 }

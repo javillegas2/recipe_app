@@ -5,12 +5,13 @@ import './MainBanner.scss';
 
 export const MainBanner: FC = (): ReactElement | null => {
   return (
-      <div className="container-banner">
-          <div className="container-banner-title">Recetas</div>
-          <div className="container-banner-subtitle">para todos</div>
-
+    <div className="container-banner">
+      <div className="text-banner">
+        <div className="container-banner-title">Recetas</div>
+        <div className="container-banner-subtitle">para todos</div>
       </div>
-    
+    </div>
+
   );
 };
 

@@ -2,32 +2,102 @@
   background: transparent url("../../img/bcq.png") 0% 0% no-repeat padding-box;
   opacity: 1;
   width: 100%;
-  height: 416px;
+
   position: relative;
 
   &-title {
-    top: 135px;
-    left: 261px;
-    width: 300px;
-    height: 79px;
+    // top: 135px;
+    // left: 261px;
+    // width: 300px;
+    // height: 79px;
     text-align: left;
     font: normal normal normal 74px/111px Poppins;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    position: absolute;
+    // position: absolute;
   }
 
   &-subtitle {
-    top: 204px;
-    left: 261px;
-    width: 249px;
-    height: 83px;
+    // top: 204px;
+    // left: 261px;
+    // width: 249px;
+    // height: 83px;
     text-align: left;
     font: normal normal normal 67px/91px Monster Clubhouse;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    position: absolute;
+    // position: absolute;
+  }
+}
+
+@media (max-width: 428px) {
+  .container-banner {
+    height: 234px;
+    .text-banner {
+      left: 15%;
+      position: absolute;
+      top: 22%;
+    }
+
+    &-title {
+      font: normal normal normal 51px/77px Poppins;
+      height: 51px;
+
+
+    }
+
+    &-subtitle {
+      font: normal normal normal 51px/69px Monster Clubhouse;
+      height: 51px;
+
+
+    }
+  }
+}
+
+@media (min-width: 428px) and (max-width: 767px) {
+  .container-banner {
+    height: 249px;
+    // background-size: contain;
+    
+
+    .text-banner {
+      left: 15%;
+      position: absolute;
+      top: 15%;
+    }
+
+    &-title {
+      height: 74px;
+    }
+
+    &-subtitle {
+      height: 74px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container-banner {
+    height: 416px;
+    // background-size: contain;
+
+    
+
+    .text-banner {
+      left: 20%;
+      position: absolute;
+      top: 33%;
+    }
+
+    &-title {
+      height: 74px;
+    }
+
+    &-subtitle {
+      height: 74px;
+    }
   }
 }
