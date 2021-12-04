@@ -47,7 +47,7 @@ export const ContainerCards: FC = (): ReactElement | null => {
     <div className="container-cards">
 
       {recipes.map(item => {
-        return <Card img={item.img} title={item.title} subtitle={item.subtitle} portionSize= {item.portionSize} time = {item.time} difficulty = {item.difficulty} />
+        return <Card key={item.title+item.subtitle} img={item.img} title={item.title} subtitle={item.subtitle} portionSize= {item.portionSize} time = {item.time} difficulty = {item.difficulty} />
       })}
     </div>
 

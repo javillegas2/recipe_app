@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 import { ContainerCards } from "../ContainerCards";
 import { Header } from "../Header";
 import { MainBanner } from "../MainBanner";
+import { SecondMenu } from "../SecondMenu";
 import { SponsorFooter } from "../SponsorFooter";
 import { Subtitle } from "../Subtitle";
 
@@ -12,6 +13,7 @@ export const App = (): ReactElement | null => {
     <div className="App">
       <Header />
       <MainBanner/>
+      <SecondMenu />
       <Subtitle />
       <ContainerCards />
       <SponsorFooter/>
