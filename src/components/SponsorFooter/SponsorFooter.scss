@@ -1,27 +1,128 @@
-.sponsor-footer {
-  height: 190px;
-  width: 100%;
+// .sponsor-footer {
+//   height: 190px;
+//   width: 100%;
 
-  padding-top: 70px;
-  position: relative;
+//   padding-top: 70px;
+//   position: relative;
+
+//   .gradient-band {
+//     width: 100%;
+
+//     background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+//       0% no-repeat padding-box;
+//     box-shadow: 4px 6px 23px #a9a9a911;
+//     opacity: 1;
+//     .sponsor-desc {
+//       width: 380px;
+//       height: 76px;
+//       text-align: left;
+//       font: normal normal normal 56px/76px Monster Clubhouse;
+//       letter-spacing: 0px;
+//       color: #425966;
+//       position: absolute;
+//       top: 115px;
+//       left: 166px;
+//     }
+//   }
+
+//   .market_image {
+//     background: transparent url("../../img/Grupo7610.png") 0% 0% no-repeat
+//       padding-box;
+//     opacity: 1;
+//     position: absolute;
+//     top: 0;
+//     right: 80px;
+//   }
+// }
+
+// @media (max-width: 428px) {
+//   .sponsor-footer {
+//     .gradient-band {
+//       height: 70px;
+//       .sponsor-desc {
+//         text-align: left;
+//         font: normal normal normal 23px/31px Monster Clubhouse;
+//         letter-spacing: 0px;
+//         top: 90px;
+//         left: 20px;
+//       }
+//     }
+//     .market_image {
+//       width: 228px;
+//       height: 106px;
+//       background-size: cover;
+//       top: 54px;
+//       right: -5px;
+//     }
+//   }
+// }
+
+// @media (min-width: 428px) and (max-width: 767px) {
+//   .sponsor-footer {
+//     .gradient-band {
+//       height: 116px;
+//       .sponsor-desc {
+//         text-align: left;
+//         font: normal normal normal 39px/53px Monster Clubhouse;
+//         letter-spacing: 0px;
+//         top: 106px;
+//         left: 120px;
+//       }
+//     }
+//     .market_image {
+//       height: 175px;
+//       width: 330px;
+//       background-size: cover;
+//       top: 50px;
+//       right: 5px;
+//     }
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .sponsor-footer {
+//     .gradient-band {
+//       height: 167px;
+//       .sponsor-desc {
+//       }
+//     }
+//     .market_image {
+//       width: 536px;
+//       height: 248px;
+//     }
+//   }
+// }
+
+
+.sponsor-footer {
+  height: 15%;
+    width: 100%;
+    padding-top: 70px;
+  
 
   .gradient-band {
     width: 100%;
+    height: 100%;
 
     background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
       0% no-repeat padding-box;
     box-shadow: 4px 6px 23px #a9a9a911;
     opacity: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     .sponsor-desc {
-      width: 380px;
-      height: 76px;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
       text-align: left;
       font: normal normal normal 56px/76px Monster Clubhouse;
       letter-spacing: 0px;
       color: #425966;
-      position: absolute;
-      top: 115px;
-      left: 166px;
+      
     }
   }
 
@@ -29,9 +130,11 @@
     background: transparent url("../../img/Grupo7610.png") 0% 0% no-repeat
       padding-box;
     opacity: 1;
-    position: absolute;
-    top: 0;
-    right: 80px;
+    background-size: cover;
+    height: 150%;
+    width: 46%;
+    position: relative;
+    
   }
 }
 
@@ -40,20 +143,13 @@
     .gradient-band {
       height: 70px;
       .sponsor-desc {
-        text-align: left;
+        
         font: normal normal normal 23px/31px Monster Clubhouse;
         letter-spacing: 0px;
-        top: 90px;
-        left: 20px;
+        
       }
     }
-    .market_image {
-      width: 228px;
-      height: 106px;
-      background-size: contain;
-      top: 54px;
-      right: -5px;
-    }
+    
   }
 }
 
@@ -62,33 +158,22 @@
     .gradient-band {
       height: 116px;
       .sponsor-desc {
-        text-align: left;
+       
         font: normal normal normal 39px/53px Monster Clubhouse;
         letter-spacing: 0px;
-        top: 106px;
-        left: 120px;
+       
       }
     }
-    .market_image {
-      height: 175px;
-      width: 330px;
-      background-size: contain;
-      top: 50px;
-      right: 5px;
-    }
+    
   }
 }
 
 @media (min-width: 768px) {
   .sponsor-footer {
     .gradient-band {
-      height: 167px;
-      .sponsor-desc {
-      }
+      height: 100%;
+    
     }
-    .market_image {
-      width: 536px;
-      height: 248px;
-    }
+    
   }
 }
