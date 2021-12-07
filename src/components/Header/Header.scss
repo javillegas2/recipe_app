@@ -33,12 +33,13 @@
   }
 
   .nav-menu-sup {
-    max-width: calc(100% - 375px);
+    
     width: 100%;
     //display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
   }
 
   .nav-menu-home-slim{
@@ -54,6 +55,7 @@
     //width: 130px;
     font-size: 13px;
     cursor: pointer;
+    font-weight: 600;
 
     &.selected {
       color: #d84a4a;
@@ -91,14 +93,34 @@
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
   .App-header {
     
     .nav-menu-sup {
       display: flex;
+      max-width: calc(100% - 380px);
+      margin-right: 30px;
+    }
+    .menu-item {
+      margin-right: 10px;
     }
   }
+
+}
+
+@media (min-width: 1024px){
+
+  .App-header {
+    
+    .nav-menu-sup {
+      display: flex;
+      max-width: calc(100% - 450px);
+      margin-right: 50px;
+    }
+  }
+
+  
   
 
 }
