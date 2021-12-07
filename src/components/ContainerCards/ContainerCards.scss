@@ -77,11 +77,11 @@
       z-index: 1;
 
       .empty-space-sup {
-        height: 90px;
+        height: 110px;
       }
 
       .principal-view-card {
-        height: calc(100% - 90px);
+        height: calc(100% - 110px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -162,6 +162,11 @@
     &:hover {
       .card-body {
         height: 332px;
+        
+          .empty-space-sup {
+            height: 85px;
+          }
+        
         .principal-view-card {
           display: none;
         }
