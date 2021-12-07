@@ -7,4 +7,5 @@ export type cardT = {
     portionSize: number;
     time: number;
     difficulty: string;
+    points: string;
 };

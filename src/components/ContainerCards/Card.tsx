@@ -4,7 +4,7 @@ import { cardT } from "./CardTypes";
 import './ContainerCards.scss';
 
 
-export const Card: FC<cardT> = ({ img, title, subtitle, portionSize,time, difficulty }): ReactElement | null => {
+export const Card: FC<cardT> = ({ img, title, subtitle, portionSize,time, difficulty, points }): ReactElement | null => {
     return (
         <div className="card">
             <div className="card-header">
@@ -20,7 +20,7 @@ export const Card: FC<cardT> = ({ img, title, subtitle, portionSize,time, diffic
                     <div className="principal-view-card-footer">
                         <div className="points">
                             <img src="/img/icons/ic_star.svg" alt="stars" />
-                            <span className="number">5.0</span>
+                            <span className="number">{points}</span>
 
                         </div>
                         <div className="favourite">

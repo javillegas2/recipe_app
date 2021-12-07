@@ -5,31 +5,32 @@
   // justify-content: space-around;
   overflow-x: auto;
   height: 420px;
+  justify-content: center;
 
   // &::-webkit-scrollbar{
   //   width: 0;
   // }
-  &::-webkit-scrollbar {
-    width: 4px;
-    height: 5px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: linear-gradient(13deg, #cccccc 14%, #cccccc 64%);
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(13deg, #999999 14%, #999999 64%);
-  }
-  &::-webkit-scrollbar-track {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: inset 7px 10px 12px #f0f0f0;
-  }
-  @-moz-document url-prefix() {
-    overflow-x: scroll;
-    scrollbar-color: linear-gradient(13deg, #cccccc 14%, #cccccc 64%) #ffffff;
-    scrollbar-width: thin;
-  }
+  // &::-webkit-scrollbar {
+  //   width: 4px;
+  //   height: 5px;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background: linear-gradient(13deg, #cccccc 14%, #cccccc 64%);
+  //   border-radius: 10px;
+  // }
+  // &::-webkit-scrollbar-thumb:hover {
+  //   background: linear-gradient(13deg, #999999 14%, #999999 64%);
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: #ffffff;
+  //   border-radius: 10px;
+  //   box-shadow: inset 7px 10px 12px #f0f0f0;
+  // }
+  // @-moz-document url-prefix() {
+  //   overflow-x: scroll;
+  //   scrollbar-color: linear-gradient(13deg, #cccccc 14%, #cccccc 64%) #ffffff;
+  //   scrollbar-width: thin;
+  // }
   .card {
     position: relative;
     width: 266px;
