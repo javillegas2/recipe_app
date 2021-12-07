@@ -143,7 +143,7 @@
         justify-content: center;
         align-items: center;
         .title {
-          width: 119px;
+          margin-right: 10px;
           height: 40px;
           text-align: center;
           font: normal normal normal 30px/40px Poppins;
@@ -151,7 +151,6 @@
           color: #d84a4a;
         }
         .subtitle {
-          width: 81px;
           height: 40px;
           text-align: center;
           font: normal normal normal 30px/40px Monster Clubhouse;
@@ -174,3 +173,71 @@
   }
 }
 
+@media (max-width: 428px) {
+  .container-cards {
+    height: 370px;
+    .card {
+      width: 180px;
+      min-width: 180px;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &-header {
+        .header-image {
+          width: 111px;
+          height: 107px;
+        }
+      }
+
+      &-body {
+        width: 180px;
+        height: 182px;
+        top: 40px;
+
+        .empty-space-sup {
+          height: 85px;
+        }
+
+        .principal-view-card {
+          &-footer {
+            margin: 4px 13px;
+            height: 20px;
+            img {
+              height: 20px;
+              width: 20px;
+            }
+            .points {
+              .number {
+                font: normal normal normal 17px/26px Poppins;
+                letter-spacing: -0.34px;
+              }
+            }
+          }
+        }
+        .card-names {
+          .title {
+            text-align: center;
+            font: normal normal normal 20px/27px Poppins;
+            letter-spacing: -0.4px;
+          }
+          .subtitle {
+            text-align: center;
+            font: normal normal normal 20px/27px Monster Clubhouse;
+            letter-spacing: -0.4px;
+          }
+        }
+      }
+      &:hover {
+        .card-body {
+          height: 300px;
+          top: 40px;
+          .empty-space-sup {
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
